@@ -1,0 +1,101 @@
+/* ======================================================
+   ABOUT
+====================================================== */
+
+.about-content {
+
+    display: grid;
+
+    grid-template-columns: 350px 1fr;
+
+    gap: 70px;
+
+    align-items: center;
+
+}
+
+.about-image {
+
+    display: flex;
+
+    justify-content: center;
+
+}
+
+.about-image img {
+
+    width: 100%;
+
+    max-width: 320px;
+
+    border-radius: 20px;
+
+    border: 1px solid #222;
+
+    transition: .4s;
+
+}
+
+.about-image img:hover {
+
+    transform: scale(1.03);
+
+}
+
+.about-text p {
+
+    color: #b5b5b5;
+
+    line-height: 2;
+
+    margin-bottom: 40px;
+
+    font-size: 17px;
+
+}
+
+.about-info {
+
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 25px;
+
+}
+
+.about-info div {
+
+    background: #0d0d0d;
+
+    border: 1px solid #202020;
+
+    border-radius: 15px;
+
+    padding: 20px;
+
+    transition: .3s;
+
+}
+
+.about-info div:hover {
+
+    border-color: white;
+
+}
+
+.about-info h4 {
+
+    margin-bottom: 8px;
+
+    font-size: 15px;
+
+    color: white;
+
+}
+
+.about-info span {
+
+    color: #999;
+
+}

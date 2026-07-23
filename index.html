@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <link rel="icon" href="assets/favicon/profile.jpeg">
+
+    <meta property="og:title" content="Muhammad Ibnuh Sabri Portfolio">
+
+    <meta property="og:description" content="Website Portfolio Muhammad Ibnuh Sabri">
+
+    <meta property="og:image" content="assets/images/preview.png">
+
+    <!-- ================= META ================= -->
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+        content="Portfolio Muhammad Ibnuh Sabri, Informatics Student, Web Developer, Game Developer, dan UI/UX Designer.">
+
+    <meta name="keywords"
+        content="Muhammad Ibnuh Sabri, Portfolio, Informatika, Web Developer, Game Developer, UI UX, Godot, HTML, CSS, JavaScript">
+
+    <meta name="author" content="Muhammad Ibnuh Sabri">
+
+    <title>Muhammad Ibnuh Sabri | Portfolio</title>
+
+    <!-- ================= GOOGLE ICON ================= -->
+
+    <link rel="icon" href="assets/icons/favicon.png">
+
+    <!-- ================= FONT AWESOME ================= -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- ================= CSS ================= -->
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/hero.css">
+    <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="css/skills.css">
+    <link rel="stylesheet" href="css/project.css">
+    <link rel="stylesheet" href="css/experience.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/animation.css">
+    <link rel="stylesheet" href="css/effects.css">
+    <link rel="stylesheet" href="css/loader.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+
+    <div id="cursor"></div>
+
+    <canvas id="particles"></canvas>
+
+    <div class="loader"></div>
+
+    <!-- ================= LOADER ================= -->
+
+    <div id="loader">
+
+        <div class="loader-content">
+
+            <h1>IBNUH.</h1>
+
+            <p>Loading Portfolio...</p>
+
+            <div class="loading-bar">
+
+                <div class="loading-progress"></div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- ================= CURSOR ================= -->
+
+
+
+    <div id="cursor-glow"></div>
+
+    <!-- ================= GRID ================= -->
+
+    <div class="grid-bg"></div>
+
+    <!-- ================= PROGRESS ================= -->
+
+    <div id="progress-bar"></div>
+
+    <!-- ================= HEADER ================= -->
+
+    <header>
+
+        <nav class="navbar">
+
+            <div class="logo">
+
+                IBNUH.
+
+            </div>
+
+            <ul class="nav-links">
+
+                <li><a href="#home">Home</a></li>
+
+                <li><a href="#about">About</a></li>
+
+                <li><a href="#skills">Skills</a></li>
+
+                <li><a href="#projects">Projects</a></li>
+
+                <li><a href="#experience">Experience</a></li>
+
+                <li><a href="#contact">Contact</a></li>
+
+            </ul>
+
+            <div class="menu-btn">
+
+                <i class="fa-solid fa-bars"></i>
+
+            </div>
+
+        </nav>
+
+    </header>
+
+    <!-- ================= MAIN ================= -->
+
+    <main>
+
+        <!-- ================= HERO ================= -->
+
+        <section class="hero" id="home">
+
+            <div class="hero-left">
+
+                <p class="small-title">
+                    WELCOME TO MY PORTFOLIO
+                </p>
+
+                <h1>
+                    Muhammad <br>
+                    Ibnuh Sabri
+                </h1>
+
+                <h3 id="typing">
+                    Informatics Student
+                </h3>
+
+                <p class="hero-desc">
+                    Saya adalah mahasiswa Informatika yang memiliki minat dalam
+                    pengembangan website, game development
+                    dan UI/UX Design. Saya senang mempelajari teknologi baru dan
+                    membangun project yang bermanfaat.
+                </p>
+
+                <div class="hero-buttons">
+
+                    <div class="hero-stats">
+
+                        <div class="stat">
+
+                            <h2 class="counter" data-target="2">0</h2>
+
+                            <p>Projects</p>
+
+                        </div>
+
+                        <div class="stat">
+
+                            <h2 class="counter" data-target="0">0</h2>
+
+                            <p>Certificates</p>
+
+                        </div>
+
+                        <div class="stat">
+
+                            <h2 class="counter" data-target="2">0</h2>
+
+                            <p>Years Learning</p>
+
+                        </div>
+
+                        <div class="stat">
+
+                            <h2 class="counter" data-target="100">0</h2>
+
+                            <p>Commitment</p>
+
+                        </div>
+
+                    </div>
+
+                    <a href="assets/cv/CV_Ibnuh_Sabri.pdf" class="btn" download>
+                        Download CV
+                    </a>
+
+                    <a href="#contact" class="btn-outline">
+                        Contact Me
+                    </a>
+
+                </div>
+
+            </div> <!-- HERO LEFT SELESAI -->
+
+            <div class="hero-right">
+
+                <div class="hero-image">
+
+                    <img src="assets/images/profile.jpeg" alt="Muhammad Ibnuh Sabri">
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- ================= ABOUT ================= -->
+
+        <section id="about" class="reveal reveal-left">
+
+            <div class="section-title">
+
+                <h2>About Me</h2>
+
+                <p>Know me better</p>
+
+            </div>
+
+            <div class="about-content">
+
+                <div class="about-image">
+
+                    <img src="assets/images/profile.jpeg" alt="About Me">
+
+                </div>
+
+                <div class="about-text">
+
+                    <p>
+
+                        Halo! Saya <strong>Muhammad Ibnuh Sabri</strong>, mahasiswa
+                        Informatika yang memiliki minat pada Web Development,
+                        Game Development dan UI/UX Design.
+                        Saya senang membangun aplikasi yang tidak hanya berfungsi
+                        dengan baik tetapi juga memiliki pengalaman pengguna yang menarik.
+
+                    </p>
+
+                    <div class="about-info">
+
+                        <div>
+
+                            <h4>Nama</h4>
+
+                            <span>Muhammad Ibnuh Sabri</span>
+
+                        </div>
+
+                        <div>
+
+                            <h4>Email</h4>
+
+                            <span>muhibnuhsabri@email.com</span>
+
+                        </div>
+
+                        <div>
+
+                            <h4>Lokasi</h4>
+
+                            <span>Majene, Indonesia</span>
+
+                        </div>
+
+                        <div>
+
+                            <h4>Status</h4>
+
+                            <span>Informatics Student</span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- ================= SKILLS ================= -->
+
+        <section id="skills" class="reveal reveal-bottom">
+
+            <div class="section-title">
+
+                <h2>Skills</h2>
+
+                <p>Technology that I use</p>
+
+            </div>
+
+            <div class="skills-grid">
+
+                <div class="skills-progress">
+
+                    <div class="skill">
+
+                        <div class="skill-info">
+
+                            <span>HTML</span>
+
+                            <span>80%</span>
+
+                        </div>
+
+                        <div class="progress">
+
+                            <div class="progress-bar" data-width="80%"></div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="skill">
+
+                        <div class="skill-info">
+
+                            <span>CSS</span>
+
+                            <span>70%</span>
+
+                        </div>
+
+                        <div class="progress">
+
+                            <div class="progress-bar" data-width="70%"></div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="skill">
+
+                        <div class="skill-info">
+
+                            <span>JavaScript</span>
+
+                            <span>75%</span>
+
+                        </div>
+
+                        <div class="progress">
+
+                            <div class="progress-bar" data-width="75%"></div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="skill">
+
+                        <div class="skill-info">
+
+                            <span>Python</span>
+
+                            <span>65%</span>
+
+                        </div>
+
+                        <div class="progress">
+
+                            <div class="progress-bar" data-width="65%"></div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="skill">
+
+                        <div class="skill-info">
+
+                            <span>Java</span>
+
+                            <span>80%</span>
+
+                        </div>
+
+                        <div class="progress">
+
+                            <div class="progress-bar" data-width="80%"></div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="skill">
+
+                        <div class="skill-info">
+
+                            <span>Figma</span>
+
+                            <span>90%</span>
+
+                        </div>
+
+                        <div class="progress">
+
+                            <div class="progress-bar" data-width="90%"></div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="skill">
+
+                        <div class="skill-info">
+
+                            <span>Godot Engine</span>
+
+                            <span>75%</span>
+
+                        </div>
+
+                        <div class="progress">
+
+                            <div class="progress-bar" data-width="75%"></div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- ================= PROJECT ================= -->
+
+        <section id="projects" class="reveal reveal-fade">
+
+            <div class="section-title">
+
+                <h2>Projects</h2>
+
+                <p>Some of my recent works</p>
+
+            </div>
+
+            <div class="projects-grid">
+
+                <!-- PROJECT 1 -->
+
+                <div class="project-card">
+
+                    <div class="project-image">
+
+                        <img src="assets/images/portofolio_website.png" alt="Portfolio Website">
+
+                    </div>
+
+                    <div class="project-content">
+
+                        <h3>Portfolio Website</h3>
+
+                        <p>
+                            Website portfolio pribadi menggunakan
+                            HTML, CSS, dan JavaScript.
+                        </p>
+
+                        <div class="project-tech">
+
+                            <span>HTML</span>
+
+                            <span>CSS</span>
+
+                            <span>JavaScript</span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- PROJECT 2 -->
+
+                <div class="project-card">
+
+                    <div class="project-image">
+
+                        <img src="assets/images/portofolio_website.png" alt="Game RPG">
+
+                    </div>
+
+                    <div class="project-content">
+
+                        <h3>Game RPG Pixel Art</h3>
+
+                        <p>
+                            Game 2D turn-based RPG dengan sistem
+                            battle, eksplorasi, dan karakter pixel art.
+                        </p>
+
+                        <div class="project-tech">
+
+                            <span>Godot</span>
+
+                            <span>GDScript</span>
+
+                            <span>Pixel Art</span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+        <!-- ================= EXPERIENCE ================= -->
+
+        <section id="experience" class="reveal reveal-right">
+
+            <div class="section-title">
+
+                <h2>Experience</h2>
+
+                <p>My learning journey</p>
+
+            </div>
+
+            <div class="timeline">
+
+                <div class="timeline-item">
+
+                    <div class="timeline-dot"></div>
+
+                    <div class="timeline-content">
+
+                        <span class="timeline-year">2024</span>
+
+                        <h3>Started Learning Programming</h3>
+
+                        <p>
+                            Mulai mempelajari HTML, CSS, JavaScript,
+                            Python, dan dasar-dasar pemrograman.
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="timeline-item">
+
+                    <div class="timeline-dot"></div>
+
+                    <div class="timeline-content">
+
+                        <span class="timeline-year">2025</span>
+
+                        <h3>Website Development</h3>
+
+                        <p>
+                            Membangun berbagai website dan mulai
+                            mengembangkan portfolio pribadi.
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="timeline-item">
+
+                    <div class="timeline-dot"></div>
+
+                    <div class="timeline-content">
+
+                        <span class="timeline-year">2026</span>
+
+                        <h3>Game Development</h3>
+
+                        <p>
+                            Mengembangkan game RPG Pixel Art
+                            menggunakan Godot Engine.
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="timeline-item">
+
+                    <div class="timeline-dot"></div>
+
+                    <div class="timeline-content">
+
+                        <span class="timeline-year">Future</span>
+
+                        <h3>Software Engineer</h3>
+
+                        <p>
+                            Terus belajar teknologi baru dan
+                            membangun solusi yang bermanfaat.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- ================= CONTACT ================= -->
+
+        <section id="contact" class="reveal reveal-zoom">
+
+            <div class="section-title">
+
+                <h2>Contact Me</h2>
+
+                <p>Let's get in touch</p>
+
+            </div>
+
+            <div class="contact-grid">
+
+                <a href="mailto:muhibnuhsabri@gmail.com" class="contact-card">
+
+                    <i class="fa-solid fa-envelope"></i>
+
+                    <h3>Email</h3>
+
+                    <p>muhibnuhsabri@gmail.com</p>
+
+                </a>
+
+                <a href="https://instagram.com/ingfomakangratis" target="_blank" class="contact-card">
+
+                    <i class="fa-brands fa-instagram"></i>
+
+                    <h3>Instagram</h3>
+
+                    <p>@ingfomakangratis</p>
+
+                </a>
+
+                <a href="https://www.tiktok.com/@sigmaguech" target="_blank" class="contact-card">
+
+                    <i class="fa-brands fa-tiktok"></i>
+
+                    <h3>TikTok</h3>
+
+                    <p>@sigmaguech</p>
+
+                </a>
+
+                <a href="https://wa.me/62812xxxxxxxx" target="_blank" class="contact-card">
+
+                    <i class="fa-brands fa-whatsapp"></i>
+
+                    <h3>WhatsApp</h3>
+
+                    <p>+62 812-xxxx-xxxx</p>
+
+                </a>
+
+            </div>
+
+        </section>
+    </main>
+
+    <!-- ================= BACK TO TOP ================= -->
+
+    <button id="topBtn">
+
+        <i class="fa-solid fa-arrow-up"></i>
+
+    </button>
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <p>
+
+            © 2026 Muhammad Ibnuh Sabri.
+
+            All Rights Reserved.
+
+        </p>
+
+    </footer>
+
+    <!-- ================= JAVASCRIPT ================= -->
+
+    <script src="js/main.js"></script>
+
+    <script src="js/loader.js"></script>
+
+    <script src="js/typing.js"></script>
+
+    <script src="js/navbar.js"></script>
+
+    <script src="js/reveal.js"></script>
+
+    <script src="js/progress.js"></script>
+
+    <script src="js/topbutton.js"></script>
+
+    <script src="js/skills.js"></script>
+
+    <script src="js/particles.js"></script>
+
+    <script src="js/counter.js"></script>
+
+    <script src="js/effects.js"></script>
+
+</body>
+
+</html>

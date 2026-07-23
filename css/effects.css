@@ -1,0 +1,104 @@
+/* ================= CUSTOM CURSOR ================= */
+
+body {
+
+    cursor: none;
+
+}
+
+#cursor {
+
+    position: fixed;
+
+    width: 18px;
+
+    height: 18px;
+
+    border: 2px solid white;
+
+    border-radius: 50%;
+
+    pointer-events: none;
+
+    transform: translate(-50%, -50%);
+
+    transition:
+        width .25s ease,
+        height .25s ease,
+        border-color .25s ease,
+        background .25s ease;
+
+    z-index: 99999;
+
+}
+
+/* Hover */
+
+#cursor.hover {
+
+    width: 35px;
+
+    height: 35px;
+
+    background: rgba(255, 255, 255, .15);
+
+}
+
+/* ================= MOUSE GLOW ================= */
+
+#cursor-glow {
+
+    position: fixed;
+
+    width: 300px;
+
+    height: 300px;
+
+    border-radius: 50%;
+
+    background: radial-gradient(circle,
+            rgba(255, 255, 255, .10) 0%,
+            rgba(255, 255, 255, .04) 35%,
+            rgba(255, 255, 255, 0) 70%);
+
+    pointer-events: none;
+
+    transform: translate(-50%, -50%);
+
+    z-index: -1;
+
+    transition: transform .08s linear;
+
+}
+
+/* ======================================================
+   TYPING CURSOR
+====================================================== */
+
+.typing-cursor {
+
+    display: inline-block;
+
+    margin-left: 2px;
+
+    animation: blink .8s infinite;
+
+    font-weight: 700;
+
+}
+
+@keyframes blink {
+
+    0%, 50% {
+
+        opacity: 1;
+
+    }
+
+    51%, 100% {
+
+        opacity: 0;
+
+    }
+
+}

@@ -1,0 +1,217 @@
+/* ======================================================
+   TABLET
+====================================================== */
+
+@media (max-width: 992px){
+
+    section{
+
+        padding:100px 30px;
+
+    }
+
+    .hero{
+
+        gap:40px;
+
+    }
+
+    .hero-left h1{
+
+        font-size:56px;
+
+    }
+
+    .hero-image{
+
+        width:300px;
+
+        height:300px;
+
+    }
+
+    .hero-stats{
+
+        gap:30px;
+
+    }
+
+}
+
+/* ======================================================
+   MOBILE
+====================================================== */
+
+@media (max-width:768px){
+
+    .hero{
+
+        flex-direction:column-reverse;
+
+        text-align:center;
+
+        gap:50px;
+
+    }
+
+    .hero-left{
+
+        display:flex;
+
+        flex-direction:column;
+
+        align-items:center;
+
+    }
+
+    .hero-left h1{
+
+        font-size:42px;
+
+    }
+
+    .hero-desc{
+
+        max-width:100%;
+
+    }
+
+    .hero-buttons{
+
+        justify-content:center;
+
+    }
+
+    .hero-image{
+
+        width:250px;
+
+        height:250px;
+
+    }
+
+    .hero-stats{
+
+        justify-content:center;
+
+        gap:25px;
+
+    }
+
+}
+
+/* ======================================================
+   SMALL MOBILE
+====================================================== */
+
+@media (max-width:480px){
+
+    section{
+
+        padding:90px 20px;
+
+    }
+
+    .hero-left h1{
+
+        font-size:34px;
+
+    }
+
+    #typing{
+
+        font-size:22px;
+
+    }
+
+    .hero-image{
+
+        width:210px;
+
+        height:210px;
+
+    }
+
+    .btn,
+
+    .btn-outline{
+
+        width:100%;
+
+        text-align:center;
+
+    }
+
+    .hero-buttons{
+
+        width:100%;
+
+    }
+
+}
+
+/* ================= ABOUT ================= */
+
+@media (max-width:992px){
+
+    .about-content{
+
+        grid-template-columns:280px 1fr;
+
+        gap:40px;
+
+    }
+
+}
+
+/* ================= ABOUT ================= */
+
+@media (max-width:768px){
+
+    .about-content{
+
+        grid-template-columns:1fr;
+
+        gap:40px;
+
+        text-align:center;
+
+    }
+
+    .about-image{
+
+        justify-content:center;
+
+    }
+
+    .about-image img{
+
+        max-width:260px;
+
+    }
+
+    .about-info{
+
+        grid-template-columns:1fr;
+
+    }
+
+}
+
+@media (max-width:480px){
+
+    .about-image img{
+
+        max-width:220px;
+
+    }
+
+    .about-text p{
+
+        font-size:15px;
+
+        line-height:1.8;
+
+    }
+
+}

@@ -1,0 +1,25 @@
+/* ======================================================
+   FOOTER
+====================================================== */
+
+footer {
+
+    margin-top: 120px;
+
+    padding: 40px 20px;
+
+    border-top: 1px solid #222;
+
+    text-align: center;
+
+    color: #777;
+
+    font-size: 15px;
+
+}
+
+footer p {
+
+    letter-spacing: 1px;
+
+}

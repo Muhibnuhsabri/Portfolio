@@ -1,0 +1,109 @@
+/* ================= EXPERIENCE ================= */
+
+.timeline {
+
+    position: relative;
+
+    max-width: 800px;
+
+    margin: auto;
+
+    padding-left: 40px;
+
+}
+
+.timeline::before {
+
+    content: "";
+
+    position: absolute;
+
+    left: 10px;
+
+    top: 0;
+
+    width: 2px;
+
+    height: 100%;
+
+    background: #333;
+
+}
+
+.timeline-item {
+
+    position: relative;
+
+    margin-bottom: 60px;
+
+}
+
+.timeline-dot {
+
+    position: absolute;
+
+    left: -38px;
+
+    top: 10px;
+
+    width: 18px;
+
+    height: 18px;
+
+    background: white;
+
+    border-radius: 50%;
+
+    box-shadow: 0 0 15px rgba(255, 255, 255, .3);
+
+}
+
+.timeline-content {
+
+    background: #111;
+
+    border: 1px solid #222;
+
+    border-radius: 15px;
+
+    padding: 25px;
+
+    transition: .4s;
+
+}
+
+.timeline-content:hover {
+
+    transform: translateX(10px);
+
+    border-color: #555;
+
+}
+
+.timeline-year {
+
+    display: inline-block;
+
+    margin-bottom: 10px;
+
+    color: #888;
+
+    font-size: .9rem;
+
+    letter-spacing: 2px;
+
+}
+
+.timeline-content h3 {
+
+    margin-bottom: 12px;
+
+}
+
+.timeline-content p {
+
+    color: #aaa;
+
+    line-height: 1.8;
+
+}

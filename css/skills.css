@@ -1,0 +1,145 @@
+/* ======================================================
+   SKILLS
+====================================================== */
+
+.skills-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+
+    gap: 25px;
+
+}
+
+.skill-card {
+
+    background: #0d0d0d;
+
+    border: 1px solid #222;
+
+    border-radius: 18px;
+
+    padding: 35px 25px;
+
+    text-align: center;
+
+    transition: .35s;
+
+    cursor: pointer;
+
+}
+
+.skill-card:hover {
+
+    transform: translateY(-10px);
+
+    border-color: white;
+
+}
+
+.skill-card i {
+
+    font-size: 55px;
+
+    margin-bottom: 20px;
+
+}
+
+.skill-card h3 {
+
+    font-size: 18px;
+
+    font-weight: 500;
+
+    letter-spacing: 1px;
+
+}
+
+/* ======================================================
+   HOVER EFFECT
+====================================================== */
+
+.skill-card,
+.project-card,
+.about-info div {
+
+    box-shadow: 0 0 0 rgba(255, 255, 255, 0);
+
+}
+
+.skill-card:hover,
+.project-card:hover,
+.about-info div:hover {
+
+    box-shadow: 0 0 30px rgba(255, 255, 255, .05);
+
+}
+
+/* ================= SKILL PROGRESS ================= */
+
+.skills-progress {
+
+    width: 70%;
+
+    max-width: 700px;
+
+    margin: auto;
+
+}
+
+.skill {
+
+    margin-bottom: 30px;
+
+}
+
+.skill-info {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    margin-bottom: 10px;
+
+    font-weight: 600;
+
+}
+
+.progress {
+
+    width: 100%;
+
+    height: 12px;
+
+    background: #222;
+
+    border-radius: 50px;
+
+    overflow: hidden;
+
+}
+
+.progress-bar {
+
+    width: 0;
+
+    max-width: 100%;
+
+    height: 100%;
+
+    background: white;
+
+    border-radius: 50px;
+
+    transition: width 1.5s ease;
+
+}
+
+#skills {
+
+    padding-left: 40px;
+
+    padding-right: 40px;
+
+}

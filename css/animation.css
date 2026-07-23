@@ -1,0 +1,324 @@
+/* ==========================================
+            PREMIUM EFFECT
+========================================== */
+
+
+/* GRID BACKGROUND */
+
+.grid-bg {
+
+    position: fixed;
+
+    inset: 0;
+
+    z-index: -2;
+
+}
+
+/* CURSOR GLOW */
+
+#cursor-glow {
+
+    width: 250px;
+
+    height: 250px;
+
+    border-radius: 50%;
+
+    position: fixed;
+
+    pointer-events: none;
+
+    background: radial-gradient(circle,
+            rgba(255, 255, 255, .08),
+            transparent 70%);
+
+    transform: translate(-50%, -50%);
+
+    z-index: -1;
+
+}
+
+
+/* PROGRESS BAR */
+
+#progress-bar {
+
+    position: fixed;
+
+    top: 0;
+
+    left: 0;
+
+    width: 0;
+
+    height: 3px;
+
+    background: white;
+
+    z-index: 999999;
+
+}
+
+
+/* CARD GLOW */
+
+.skill-card:hover,
+
+.project-card:hover,
+
+.timeline-item:hover {
+
+    box-shadow:
+
+        0 0 25px rgba(255, 255, 255, .08);
+
+}
+
+/* BUTTON EFFECT */
+
+.btn,
+
+.btn-outline {
+
+    overflow: hidden;
+
+    position: relative;
+
+}
+
+
+.btn::before,
+
+.btn-outline::before {
+
+    content: "";
+
+    position: absolute;
+
+    width: 0;
+
+    height: 100%;
+
+    left: 0;
+
+    top: 0;
+
+    background: rgba(255, 255, 255, .15);
+
+    transition: .4s;
+
+}
+
+
+.btn:hover::before,
+
+.btn-outline:hover::before {
+
+    width: 100%;
+
+}
+
+
+/* SECTION FADE */
+
+section {
+
+    animation: fade .8s;
+
+}
+
+
+@keyframes fade {
+
+    from {
+
+        opacity: 0;
+
+    }
+
+    to {
+
+        opacity: 1;
+
+    }
+
+}
+
+/* ======================================================
+   SMALL EFFECT
+====================================================== */
+
+::selection {
+
+    background: white;
+
+    color: black;
+
+}
+
+html {
+
+    scroll-padding-top: 100px;
+
+}
+
+/* ======================================================
+   SCROLL REVEAL
+====================================================== */
+
+.hidden {
+
+    opacity: 0;
+
+    transform: translateY(70px);
+
+    transition: all .8s ease;
+
+}
+
+.show {
+
+    opacity: 1;
+
+    transform: translateY(0);
+
+}
+
+.hero-left {
+
+    animation: slideLeft 1s ease;
+
+}
+
+.hero-right {
+
+    animation: slideRight 1s ease;
+
+}
+
+@keyframes slideLeft {
+
+    from {
+
+        opacity: 0;
+
+        transform: translateX(-60px);
+
+    }
+
+    to {
+
+        opacity: 1;
+
+        transform: translateX(0);
+
+    }
+
+}
+
+@keyframes slideRight {
+
+    from {
+
+        opacity: 0;
+
+        transform: translateX(60px);
+
+    }
+
+    to {
+
+        opacity: 1;
+
+        transform: translateX(0);
+
+    }
+
+}
+
+/* ================= SCROLL REVEAL ================= */
+
+.reveal {
+
+    opacity: 0;
+
+    transition: 1.2s cubic-bezier(.22, 1, .36, 1);
+
+}
+
+.reveal.active {
+
+    opacity: 1;
+
+}
+
+/* LEFT */
+
+.reveal-left {
+
+    transform: translateX(-80px);
+
+}
+
+.reveal-left.active {
+
+    transform: translateX(0);
+
+}
+
+/* RIGHT */
+
+.reveal-right {
+
+    transform: translateX(80px);
+
+}
+
+.reveal-right.active {
+
+    transform: translateX(0);
+
+}
+
+/* BOTTOM */
+
+.reveal-bottom {
+
+    transform: translateY(80px);
+
+}
+
+.reveal-bottom.active {
+
+    transform: translateY(0);
+
+}
+
+/* ZOOM */
+
+.reveal-zoom {
+
+    transform: scale(.85);
+
+}
+
+.reveal-zoom.active {
+
+    transform: scale(1);
+
+}
+
+/* FADE */
+
+.reveal-fade {
+
+    opacity: 0;
+
+}
+
+.reveal-fade.active {
+
+    opacity: 1;
+
+}
