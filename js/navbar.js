@@ -31,22 +31,26 @@ document.querySelectorAll(".nav-links a").forEach(anchor => {
 
     anchor.addEventListener("click", function (e) {
 
+        const href = this.getAttribute("href");
+
+        // hanya proses link yang menuju section
+        if (!href.startsWith("#")) return;
+
         e.preventDefault();
 
-        const target = document.querySelector(this.getAttribute("href"));
+        const target = document.querySelector(href);
 
-        const navbar = document.querySelector(".navbar");
+        // jika section tidak ada, hentikan
+        if (!target) {
+            console.warn("Section tidak ditemukan:", href);
+            return;
+        }
 
-        const navbarHeight = navbar.offsetHeight;
-
-        const targetPosition = target.offsetTop - navbarHeight - 20;
+        const navbarHeight = document.querySelector(".navbar").offsetHeight;
 
         window.scrollTo({
-
-            top: targetPosition,
-
+            top: target.offsetTop - navbarHeight - 20,
             behavior: "smooth"
-
         });
 
     });
