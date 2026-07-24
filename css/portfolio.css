@@ -1,0 +1,157 @@
+/* ======================================
+            PORTFOLIO
+====================================== */
+
+.portfolio-box{
+
+    margin-top:70px;
+
+}
+
+.portfolio-box h3{
+
+    margin-bottom:25px;
+
+    font-size:26px;
+
+}
+
+.software-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(140px,1fr));
+
+    gap:20px;
+
+}
+
+.software-card{
+
+    background:#0d0d0d;
+
+    border:1px solid #222;
+
+    border-radius:15px;
+
+    padding:25px;
+
+    text-align:center;
+
+    transition:.3s;
+
+}
+
+.software-card:hover{
+
+    transform:translateY(-8px);
+
+    border-color:white;
+
+}
+
+.software-card i{
+
+    font-size:40px;
+
+    margin-bottom:15px;
+
+}
+
+.software-card span{
+
+    display:block;
+
+    color:#ddd;
+
+}
+
+.skills-list{
+
+    display:grid;
+
+    gap:22px;
+
+}
+
+.skill span{
+
+    display:block;
+
+    margin-bottom:10px;
+
+    font-weight:600;
+
+}
+
+.progress{
+
+    width:100%;
+
+    height:8px;
+
+    background:#202020;
+
+    border-radius:20px;
+
+    overflow:hidden;
+
+}
+
+.progress-bar{
+
+    height:100%;
+
+    background:white;
+
+    border-radius:20px;
+
+}
+
+.project-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+
+    gap:30px;
+
+}
+
+.project-card img{
+
+    width:100%;
+
+    border-radius:15px;
+
+}
+
+.project-card{
+
+    background:#0d0d0d;
+
+    border:1px solid #222;
+
+    border-radius:20px;
+
+    padding:20px;
+
+    transition:.3s;
+
+}
+
+.project-card:hover{
+
+    transform:translateY(-10px);
+
+    border-color:white;
+
+}
+
+.view-all{
+
+    text-align:center;
+
+    margin-top:50px;
+
+}
