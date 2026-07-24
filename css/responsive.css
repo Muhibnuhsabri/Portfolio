@@ -215,3 +215,21 @@
     }
 
 }
+
+/* ABOUT */
+
+@media(max-width:768px){
+
+    .education-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .about-social{
+
+        justify-content:center;
+
+    }
+
+}
