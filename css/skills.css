@@ -88,9 +88,11 @@
 
 }
 
-.skill {
+.skill{
 
-    margin-bottom: 30px;
+    flex:1;
+
+    min-width:0;
 
 }
 
