@@ -211,3 +211,111 @@
     color:#777;
 
 }
+
+/* ======================================================
+   EDUCATION
+====================================================== */
+
+.education{
+
+    margin-top:50px;
+
+}
+
+.education h3{
+
+    font-size:24px;
+
+    margin-bottom:25px;
+
+}
+
+.education-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:25px;
+
+}
+
+.education-card{
+
+    display:flex;
+
+    gap:18px;
+
+    background:#0d0d0d;
+
+    border:1px solid #202020;
+
+    border-radius:18px;
+
+    padding:22px;
+
+    transition:.3s;
+
+}
+
+.education-card:hover{
+
+    border-color:white;
+
+    transform:translateY(-4px);
+
+}
+
+.education-icon{
+
+    width:55px;
+
+    height:55px;
+
+    border-radius:50%;
+
+    background:#161616;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    font-size:22px;
+
+    color:white;
+
+    flex-shrink:0;
+
+}
+
+.education-year{
+
+    color:#999;
+
+    font-size:13px;
+
+}
+
+.education-content h4{
+
+    margin:6px 0;
+
+    font-size:18px;
+
+}
+
+.education-content p{
+
+    color:white;
+
+    margin:0;
+
+}
+
+.education-content small{
+
+    color:#888;
+
+}
