@@ -303,3 +303,31 @@
     white-space:nowrap;
 
 }
+
+.education-detail{
+
+    display:grid;
+
+    grid-template-columns:1fr auto;
+
+    row-gap:8px;
+
+    column-gap:20px;
+
+    margin-top:12px;
+
+}
+
+.education-detail span:nth-child(2n){
+
+    text-align:right;
+
+    color:#bdbdbd;
+
+}
+
+.education-detail span:nth-child(2n-1){
+
+    color:#fff;
+
+}
