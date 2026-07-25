@@ -8,11 +8,9 @@ const texts = [
 
     "Informatics Student",
 
-    "Web Developer",
-
     "Game Developer",
 
-    "UI/UX Design"
+    "Design Graphic"
 
 ];
 
