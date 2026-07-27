@@ -60,7 +60,13 @@
 
 .hero-desc {
 
-    margin-bottom: 15px;
+    max-width: 650px;
+
+    color: #bcbcbc;
+
+    line-height: 1.8;
+
+    margin-bottom: 20px;
 
 }
 
@@ -74,7 +80,7 @@
 
     flex-direction: column;
 
-    gap: 18px;
+    align-items: flex-start;
 
 }
 
@@ -208,11 +214,9 @@
 
     display: flex;
 
-    gap: 50px;
+    gap: 35px;
 
-    margin-top: 60px;
-
-    flex-wrap: wrap;
+    margin-bottom: 20px;
 
 }
 
