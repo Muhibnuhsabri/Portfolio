@@ -204,3 +204,173 @@ body{
     width: 100%;
 
 }
+
+/* ======================================================
+   CONTACT PAGE
+====================================================== */
+
+.contact-hero{
+
+    padding:170px 0 70px;
+
+    text-align:center;
+
+}
+
+.contact-hero h1{
+
+    font-size:64px;
+
+    margin:15px 0;
+
+}
+
+.contact-desc{
+
+    max-width:700px;
+
+    margin:auto;
+
+    color:#999;
+
+    line-height:1.8;
+
+}
+
+.contact-content{
+
+    padding:40px 0 100px;
+
+}
+
+.contact-wrapper{
+
+    display:grid;
+
+    grid-template-columns:350px 1fr;
+
+    gap:50px;
+
+    align-items:start;
+
+}
+
+.contact-left{
+
+    text-align:center;
+
+    background:#0d0d0d;
+
+    border:1px solid #222;
+
+    border-radius:20px;
+
+    padding:35px;
+
+}
+
+.contact-left img{
+
+    width:220px;
+
+    border-radius:50%;
+
+    border:2px solid #222;
+
+    margin-bottom:25px;
+
+}
+
+.contact-left h2{
+
+    margin-bottom:8px;
+
+}
+
+.contact-left span{
+
+    color:#999;
+
+}
+
+.contact-left p{
+
+    margin-top:20px;
+
+    color:#b5b5b5;
+
+    line-height:1.8;
+
+}
+
+.contact-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:20px;
+
+}
+
+.contact-card{
+
+    background:#0d0d0d;
+
+    border:1px solid #222;
+
+    border-radius:18px;
+
+    padding:35px;
+
+    text-align:center;
+
+    transition:.3s;
+
+}
+
+.contact-card:hover{
+
+    transform:translateY(-6px);
+
+    border-color:white;
+
+}
+
+.contact-card i{
+
+    font-size:35px;
+
+    margin-bottom:15px;
+
+}
+
+.availability{
+
+    margin-top:35px;
+
+}
+
+.availability-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:15px;
+
+}
+
+.availability-grid div{
+
+    background:#0d0d0d;
+
+    border:1px solid #222;
+
+    border-radius:15px;
+
+    padding:18px;
+
+    text-align:center;
+
+}
