@@ -374,3 +374,27 @@ body{
     text-align:center;
 
 }
+
+/* ======================================================
+   SCROLL PROGRESS
+====================================================== */
+
+#scroll-progress{
+
+    position: fixed;
+
+    top: 0;
+
+    left: 0;
+
+    width: 0;
+
+    height: 4px;
+
+    background: white;
+
+    z-index: 99999;
+
+    transition: width .1s linear;
+
+}
