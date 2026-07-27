@@ -12,7 +12,9 @@
 
     gap: 80px;
 
-    min-height: 100vh;
+    min-height: calc(100vh - 80px);
+
+    padding: 120px 40px 40px;
 
 }
 
@@ -255,5 +257,26 @@
     margin-top: 8px;
 
     font-size: 15px;
+
+}
+
+.hero-action {
+
+    display: flex;
+
+    gap: 18px;
+
+    margin-top: 18px;
+
+    align-items: center;
+
+}
+
+.hero-action .btn,
+.hero-action .btn-outline {
+
+    width: 180px;
+
+    text-align: center;
 
 }
