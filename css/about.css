@@ -331,3 +331,27 @@
     color:#fff;
 
 }
+
+.about-text .education{
+
+    margin-top: 35px;
+
+}
+
+.about-text .education h3{
+
+    margin-bottom: 20px;
+
+    font-size: 28px;
+
+}
+
+.education-grid{
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 20px;
+
+}
