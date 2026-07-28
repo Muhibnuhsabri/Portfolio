@@ -6,6 +6,36 @@ const counters = document.querySelectorAll(".counter");
 
 let started = false;
 
+function animateCounter(counter){
+
+    const target = parseInt(counter.dataset.target);
+
+    const duration = 1800;
+
+    const start = performance.now();
+
+    function update(now){
+
+        const progress = Math.min((now-start)/duration,1);
+
+        counter.textContent = Math.floor(progress*target);
+
+        if(progress<1){
+
+            requestAnimationFrame(update);
+
+        }else{
+
+            counter.textContent = target;
+
+        }
+
+    }
+
+    requestAnimationFrame(update);
+
+}
+
 function startCounter(){
 
     if(started) return;
@@ -14,50 +44,14 @@ function startCounter(){
 
     counters.forEach(counter=>{
 
-        const target = +counter.dataset.target;
-
-        let count = 0;
-
-        const speed = target / 80;
-
-        function update(){
-
-            count += speed;
-
-            if(count < target){
-
-                counter.textContent = Math.floor(count);
-
-                requestAnimationFrame(update);
-
-            }else{
-
-                counter.textContent = target;
-
-            }
-
-        }
-
-        update();
+        animateCounter(counter);
 
     });
 
 }
 
-const hero = document.querySelector("#home");
+window.addEventListener("load",()=>{
 
-const observer = new IntersectionObserver(entries=>{
-
-    entries.forEach(entry=>{
-
-        if(entry.isIntersecting){
-
-            startCounter();
-
-        }
-
-    });
+    setTimeout(startCounter,700);
 
 });
-
-observer.observe(hero);
