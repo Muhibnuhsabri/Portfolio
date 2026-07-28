@@ -540,3 +540,301 @@ body {
     transform:scale(1.03);
 
 }
+
+/* ======================================================
+   TIMELINE
+====================================================== */
+
+.timeline{
+
+    position: relative;
+
+    width: 100%;
+
+    max-width: 900px;
+
+    margin: 70px auto;
+
+    padding-left: 80px;
+
+}
+
+/* Garis utama */
+
+.timeline-line{
+
+    position: absolute;
+
+    left: 25px;
+
+    top: 0;
+
+    width: 3px;
+
+    height: 100%;
+
+    background: #222;
+
+    border-radius: 50px;
+
+    overflow: hidden;
+
+}
+
+/* Nanti dipakai animasi */
+
+.timeline-progress{
+
+    position: absolute;
+
+    left: 0;
+
+    top: 0;
+
+    width: 100%;
+
+    height: 0;
+
+    background: white;
+
+    transition: height .2s linear;
+
+}
+
+/* Item */
+
+.timeline-item{
+
+    position: relative;
+
+    display: flex;
+
+    align-items: flex-start;
+
+    margin-bottom: 80px;
+
+}
+
+/* Bulatan */
+
+.timeline-dot{
+
+    position: absolute;
+
+    left: -67px;
+
+    width: 36px;
+
+    height: 36px;
+
+    border-radius: 50%;
+
+    background: #111;
+
+    border: 3px solid white;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    color: white;
+
+    font-size: 14px;
+
+    z-index: 2;
+
+}
+
+/* Card */
+
+.timeline-content{
+
+    width: 100%;
+
+    background: #0d0d0d;
+
+    border: 1px solid #222;
+
+    border-radius: 18px;
+
+    padding: 28px;
+
+    transition: .3s;
+
+}
+
+.timeline-content:hover{
+
+    transform: translateY(-6px);
+
+    border-color: white;
+
+}
+
+/* Tahun */
+
+.timeline-year{
+
+    display: inline-block;
+
+    margin-bottom: 12px;
+
+    color: #999;
+
+    font-size: 14px;
+
+    letter-spacing: 2px;
+
+    text-transform: uppercase;
+
+}
+
+/* Judul */
+
+.timeline-content h3{
+
+    margin-bottom: 15px;
+
+    font-size: 24px;
+
+}
+
+/* Deskripsi */
+
+.timeline-content p{
+
+    color: #aaa;
+
+    line-height: 1.8;
+
+}
+
+/* ======================================================
+   TIMELINE GLOW
+====================================================== */
+
+.timeline-dot{
+
+    transition: .35s;
+
+    box-shadow:
+        0 0 0px rgba(255,255,255,.3);
+
+}
+
+.timeline-dot i{
+
+    transition:.35s;
+
+}
+
+/* Glow */
+
+.timeline-item:hover .timeline-dot{
+
+    background:white;
+
+    color:black;
+
+    box-shadow:
+        0 0 12px rgba(255,255,255,.6),
+        0 0 25px rgba(255,255,255,.35);
+
+    transform:scale(1.12);
+
+}
+
+.timeline-item:hover .timeline-dot i{
+
+    transform:scale(1.15);
+
+}
+
+/* Card */
+
+.timeline-content{
+
+    transition:
+        transform .35s,
+        border-color .35s,
+        box-shadow .35s;
+
+}
+
+.timeline-item:hover .timeline-content{
+
+    transform:translateY(-6px);
+
+    border-color:white;
+
+    box-shadow:
+        0 10px 35px rgba(255,255,255,.08);
+
+}
+
+/* Judul */
+
+.timeline-content h3{
+
+    transition:.35s;
+
+}
+
+.timeline-item:hover h3{
+
+    color:white;
+
+}
+
+/* Tahun */
+
+.timeline-year{
+
+    transition:.35s;
+
+}
+
+.timeline-item:hover .timeline-year{
+
+    color:white;
+
+    letter-spacing:3px;
+
+}
+
+/* ======================================================
+   TIMELINE PULSE
+====================================================== */
+
+@keyframes pulseTimeline{
+
+    0%{
+
+        box-shadow:
+        0 0 0 rgba(255,255,255,.2);
+
+    }
+
+    50%{
+
+        box-shadow:
+        0 0 18px rgba(255,255,255,.45);
+
+    }
+
+    100%{
+
+        box-shadow:
+        0 0 0 rgba(255,255,255,.2);
+
+    }
+
+}
+
+.timeline-dot{
+
+    animation:pulseTimeline 2.5s infinite;
+
+}

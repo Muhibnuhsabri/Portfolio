@@ -285,3 +285,25 @@
     }
 
 }
+
+@media(max-width:768px){
+
+    .timeline{
+
+        padding-left:60px;
+
+    }
+
+    .timeline-dot{
+
+        left:-52px;
+
+        width:30px;
+
+        height:30px;
+
+        font-size:12px;
+
+    }
+
+}
