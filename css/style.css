@@ -420,3 +420,17 @@ body {
     transform: translateY(0);
 
 }
+
+/* ======================================================
+   TEXT SELECTION
+====================================================== */
+
+::selection {
+    background: #ffffff;
+    color: #000000;
+}
+
+::-moz-selection {
+    background: #ffffff;
+    color: #000000;
+}

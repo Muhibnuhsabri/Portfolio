@@ -154,12 +154,7 @@ section {
     background: rgb(255, 255, 255);
 
     color: black;
-
-}
-
-::-moz-selection {
-    background: #ffffff;
-    color: #000000;
+    
 }
 
 html {
