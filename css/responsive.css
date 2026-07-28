@@ -255,3 +255,33 @@
     }
 
 }
+
+@media(max-width:992px){
+
+    .featured-project{
+
+        flex-direction:column;
+
+        text-align:center;
+
+    }
+
+    .project-content{
+
+        order:2;
+
+    }
+
+    .project-image{
+
+        order:1;
+
+    }
+
+    .project-content h3{
+
+        font-size:34px;
+
+    }
+
+}
