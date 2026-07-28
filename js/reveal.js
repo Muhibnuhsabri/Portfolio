@@ -4,13 +4,17 @@ function revealSections() {
 
     const trigger = window.innerHeight * 0.85;
 
-    reveals.forEach(section => {
+    reveals.forEach((section, index) => {
 
         const top = section.getBoundingClientRect().top;
 
         if (top < trigger) {
 
-            section.classList.add("active");
+            setTimeout(() => {
+
+                section.classList.add("active");
+
+            }, index * 120);
 
         }
 

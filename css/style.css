@@ -398,3 +398,25 @@ body {
     transition: width .1s linear;
 
 }
+
+/* ==========================================
+   HERO STATS ANIMATION
+========================================== */
+
+.hero-stats .stat {
+
+    opacity: 0;
+
+    transform: translateY(30px);
+
+    transition: .6s ease;
+
+}
+
+.hero-stats .stat.active {
+
+    opacity: 1;
+
+    transform: translateY(0);
+
+}
