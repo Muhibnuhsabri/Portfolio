@@ -585,19 +585,23 @@ body {
 
 .timeline-progress{
 
-    position: absolute;
+    position:absolute;
 
-    left: 0;
+    left:0;
 
-    top: 0;
+    top:0;
 
-    width: 100%;
+    width:100%;
 
-    height: 0;
+    height:0;
 
-    background: white;
+    background:white;
 
-    transition: height .2s linear;
+    border-radius:50px;
+
+    box-shadow:
+        0 0 12px rgba(255,255,255,.5),
+        0 0 25px rgba(255,255,255,.2);
 
 }
 
@@ -836,5 +840,109 @@ body {
 .timeline-dot{
 
     animation:pulseTimeline 2.5s infinite;
+
+}
+
+/* ======================================================
+   TIMELINE REVEAL
+====================================================== */
+
+.timeline-item{
+
+    opacity:0;
+
+    transform:translateY(60px);
+
+    transition:
+        opacity .6s ease,
+        transform .6s ease;
+
+}
+
+.timeline-item.active{
+
+    opacity:1;
+
+    transform:translateY(0);
+
+}
+
+/* Card */
+
+.timeline-item.active .timeline-content{
+
+    border-color:white;
+
+    box-shadow:
+        0 8px 30px rgba(255,255,255,.08);
+
+}
+
+/* Dot */
+
+.timeline-item.active .timeline-dot{
+
+    background:white;
+
+    color:black;
+
+    transform:scale(1.15);
+
+    box-shadow:
+        0 0 12px rgba(255,255,255,.8),
+        0 0 30px rgba(255,255,255,.4);
+
+}
+
+/* ======================================================
+   TIMELINE HEAD
+====================================================== */
+
+.timeline-head{
+
+    position:absolute;
+
+    bottom:-9px;
+
+    left:50%;
+
+    transform:translateX(-50%);
+
+    width:18px;
+
+    height:18px;
+
+    border-radius:50%;
+
+    background:white;
+
+    box-shadow:
+        0 0 12px rgba(255,255,255,.9),
+        0 0 25px rgba(255,255,255,.6),
+        0 0 40px rgba(255,255,255,.25);
+
+    animation:timelineGlow 2s infinite;
+
+}
+
+@keyframes timelineGlow{
+
+    0%{
+
+        transform:translateX(-50%) scale(.9);
+
+    }
+
+    50%{
+
+        transform:translateX(-50%) scale(1.15);
+
+    }
+
+    100%{
+
+        transform:translateX(-50%) scale(.9);
+
+    }
 
 }
